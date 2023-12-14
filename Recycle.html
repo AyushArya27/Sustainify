@@ -24,7 +24,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
 
-  
+
 
         label {
             display: block;
@@ -42,6 +42,10 @@
 
         .icon {
             margin-right: 8px;
+        }
+
+        .phone-icon::before {
+            content: '\1F4F1';
         }
 
         .date-icon::before {
@@ -81,33 +85,35 @@
 </head>
 
 <body>
+    <form action="https://formsubmit.co/sustainify.sn@gmail.com" method="POST">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://ayusharya27.github.io/Sustainify/Thanks.html">
+        <div class="container">
+            <label for="phone"><span class="icon phone-icon"></span>Enter Contact No:</label>
+            <input type="phone" id="phone" name="phone">
 
-    <div class="container">
-        <label for="date"><span class="icon date-icon"></span>Enter Date:</label>
-        <input type="date" id="date" name="date">
+            <label for="date"><span class="icon date-icon"></span>Enter Date:</label>
+            <input type="date" id="date" name="date">
 
-        <label for="time"><span class="icon time-icon"></span>Enter Time:</label>
-        <input type="time" id="time" name="time">
+            <label for="time"><span class="icon time-icon"></span>Enter Time:</label>
+            <input type="time" id="time" name="time">
 
-        <label for="address"><span class="icon address-icon"></span>Enter Address:</label>
-        <input type="text" id="address" name="address">
+            <label for="address"><span class="icon address-icon"></span>Enter Address:</label>
+            <input type="text" id="address" name="address">
 
-        <label for="material"><span class="icon material-icon"></span>Type of Material:</label>
-        <select id="material" name="material">
-            <option value="medical">General Items</option>
-            <option value="general">Medical Items</option>
-            <option value="appliances">Appliances</option>
-            <option value="automobiles">Automobiles</option>
-        </select>
+            <label for="material"><span class="icon material-icon"></span>Type of Material:</label>
+            <select id="material" name="material">
+                <option value="medical">General Items</option>
+                <option value="general">Medical Items</option>
+                <option value="appliances">Appliances</option>
+                <option value="automobiles">Automobiles</option>
+            </select>
 
-        <label for="weight"><span class="icon weight-icon"></span>Estimated Weight(in Kg):</label>
-        <input type="text" id="weight" name="weight">
+            <label for="weight"><span class="icon weight-icon"></span>Estimated Weight(in Kg):</label>
+            <input type="text" id="weight" name="weight">
 
-
-
-        <button type="submit">Submit</button>
-    </div>
-
+            <button type="submit">Submit</button>
+        </div>
+    </form>
 </body>
-
 </html>

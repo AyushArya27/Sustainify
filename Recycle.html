@@ -43,6 +43,10 @@
             margin-right: 8px;
         }
 
+        .name-icon::before {
+            content: '\1F464';
+        }
+        
         .phone-icon::before {
             content: '\1F4F1';
         }
@@ -88,6 +92,10 @@
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_next" value="https://ayusharya27.github.io/Sustainify/Thanks.html">
         <div class="container">
+
+            <label for="name"><span class="icon name-icon"></span>Enter Name:</label>
+            <input type="name" id="name" name="name">
+            
             <label for="phone"><span class="icon phone-icon"></span>Enter Contact No:</label>
             <input type="phone" id="phone" name="phone">
 
